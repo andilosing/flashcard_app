@@ -29,7 +29,7 @@ app.use(
 }))
 
 app.use(cors({
-    origin: 'https://localhost:3000', // Replace with your React app domain
+    origin: 'http://localhost:3000', // Replace with your React app domain
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // Allow cookies in cross-origin requests
 }))

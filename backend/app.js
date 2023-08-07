@@ -29,7 +29,7 @@ app.use(
 }))
 
 app.use(cors({
-    origin: 'http://localhost:3000', // Replace with your React app domain
+    origin: 'https://64d101a674696f0efa4b9e48--majestic-palmier-8605cd.netlify.app/', // Replace with your React app domain
     credentials: true, // Allow cookies in cross-origin requests
 }))
 app.use(express.json())

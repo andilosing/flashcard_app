@@ -1,1 +1,1 @@
-export const API_ENDPOINT = "https://render.com/docs/web-services#port-detection" //"http://localhost:8080"
+export const API_ENDPOINT = "https://flashcard-app-service.onrender.com" //"http://localhost:8080"

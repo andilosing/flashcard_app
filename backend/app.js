@@ -38,9 +38,9 @@ app.use(express.urlencoded({extended: false}))
 app.use(express.static("public"))
 
 const autMiddleware = (req, res, next) => {
-    // if(!req.session.isLoggedIn){
-    //     return res.status(404).send("Bitte melden sie sich zuerst an!")
-    // }
+    if(!req.session.isLoggedIn){
+        return res.status(404).send("Bitte melden sie sich zuerst an!")
+    }
     next()
 }
 

@@ -30,7 +30,7 @@ try {
     const targetLang = "RU"
 
     if(!userId || !frontText){
-        return res.status(400).json({message: 'User ID and front text are required'})
+        return res.status(407).json({message: 'User ID and front text are required'})
     }
 
     const translatedText = await deeplService.translateText(frontText, targetLang);

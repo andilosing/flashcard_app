@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Login.css */
+
+/* Stil für das Login-Formular */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* Stil für den Login-Titel */
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+/* Stil für die Eingabefelder */
+.login-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Stil für den Einloggen-Button */
+.login-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Navbar.css */
+
+.navbar {
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn,
+a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+a:hover {
+  opacity: .5;
+}
+
+/* Flashcard.css */
+/* Flashcard.css */
+
+
+/* AddNewFlashcard.css */
+.add-new-flashcard {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-new-flashcard h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.add-new-flashcard form {
+  display: flex;
+  align-items: center;
+}
+
+.add-new-flashcard label {
+  margin-right: 10px;
+}
+
+.add-new-flashcard input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-new-flashcard .save-button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-new-flashcard .save-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* LearningStack.css */
+.learning-stack {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.learning-stack h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.learning-stack h4 {
+  font-size: 20px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.learning-stack h5 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.learning-stack-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.learning-stack-buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn,
+.switch-learning-stack-btn{
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.upgrade-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.downgrade-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.remove-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.learning-stack-buttons button:hover {
+  opacity: 0.4;
+}
+
+/* table karteikarte */
+.flashcard-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.flashcard-table th,
+.flashcard-table td {
+    padding: 10px;
+    text-align: center; /* Zentriert den Text in den Zellen */
+    border: 1px solid #e0e0e0; /* Trennung zwischen den Zellen */
+}
+
+.flashcard-table .header {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+}
+
+.flashcard-table .flag {
+    margin-right: 10px;
+}
+
+.flashcard-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.add-to-stack-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+/*--------*//*--------*//*--------*//*--------*//*--------*/
+/*--------*//*--------*//*--------*//*--------*//*--------*/
+/*--------*//*--------*//*--------*//*--------*//*--------*/
+/*--------*//*--------*//*--------*//*--------*//*--------*/
+
+
+ul {
+  list-style: none;
+}
+
+
+

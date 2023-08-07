@@ -30,7 +30,7 @@ app.use(
 
 app.use(cors({
     origin: 'https://andilosing.netlify.app', // Replace with your React app domain
-    methods: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // Allow cookies in cross-origin requests
 }))
 app.use(express.json())

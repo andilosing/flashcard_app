@@ -1,8 +1,9 @@
 const fetch = require('node-fetch');
+require("dotenv").config()
 
 const translateText = async (text, targetLang) => {
     const params = new URLSearchParams();
-    params.append('auth_key', '068a0763-d0bf-81d5-a339-ae5b2da16909:fx');
+    params.append('auth_key', process.env.DEEPL_API_KEY);
     params.append('text', text);
     params.append('target_lang', targetLang);
   
